@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "scripts": {
+    "build": "echo 'Building project...' && mkdir -p dist && cp -r *.html *.css *.js images/ dist/ 2 >/dev/null || true",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "server -s dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "server": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shu-bot-code/portfolio.git"
+  },
+  "author": "shu-bot-code",
+  "license": "MIT",
+  "homepage": "https://shu-bot-code.github.io/portfolio
